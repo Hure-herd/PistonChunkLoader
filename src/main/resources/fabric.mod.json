@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pistonblocktickets",
+	"version": "${version}",
+	"name": "PistonblockTickets",
+	"description": "This is chunkloader by REMS",
+	"authors": [
+		"REMS"
+	],
+	"contact": {
+		"sources": "https://space.bilibili.com/551186831"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pistonblocktickets/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"rems.mod.Tickets.PistonBlockTickets"
+		],
+		"fabric-datagen": [
+			{
+				"value": "rems.mod.PistonblockTicketsDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"pistonblocktickets.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.10"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
