@@ -8,7 +8,7 @@ import java.util.Comparator;
 
 public class PistonChunkUtility
 {
-    public static final ChunkTicketType<ChunkPos> PISTON_BLOCK_TICKET = ChunkTicketType.create("piston_block", Comparator.comparingLong(ChunkPos::toLong), 8);
+    public static final ChunkTicketType<ChunkPos> PISTON_BLOCK_TICKET = ChunkTicketType.create("piston_block", Comparator.comparingLong(ChunkPos::toLong), 6);
 
     public static final int obsidianHash = new Identifier("minecraft", "obsidian").hashCode();
 }
